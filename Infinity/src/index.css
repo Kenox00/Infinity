@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif; /* Define a CSS variable for the font family */
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #ffffff;
+  --color-primary-green: #01A653;
+  --color-primary-yellow: #ffcc33;
+
+  font-family: var(--font-dm-sans); /* Use the font variable */
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  width: 100%;
+  margin: 0;
+  padding: -100%;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

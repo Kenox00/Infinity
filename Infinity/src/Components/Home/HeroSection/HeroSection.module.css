@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 80px;
+    background-color: #ffffff;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 50%;
+  }
+  .content h1{
+    font-size: var(--);
+    font-weight: 700;
+    line-height: 50.6px;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: black;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 160px;
+    height: 46px;
+  }
+  
+  .primaryButton {
+    background-color: #00a86b;
+    color: white;
+    border: none;
+    width: 160px;
+    height: 46px;
+  }
+  
+  .primaryButton:hover {
+    background-color: white;
+    color: #00a86b;
+    border: 2px solid #00a86b;
+  }
+  
+  .secondaryButton {
+    background-color: white;
+    color: #00a86b;
+    border: 2px solid #00a86b;
+  }
+  
+  .secondaryButton:hover {
+    background-color: #00a86b;
+    color: white;
+    border: none;
+    width: 160px;
+    height: 46px;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+  }
+  
+  .circleBackground:nth-child(1){
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #3AD48759;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  .circleBackground:nth-child(2){
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #55C88E;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .circleBackground:nth-child(3){
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #01A653;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  
+  .image {
+    position: relative;
+    max-width: 80%;
+    height: auto;
+    z-index: 3;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    .content {
+      max-width: 100%;
+      margin-bottom: 2rem;
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .circleBackground {
+      width: 300px;
+      height: 300px;
+      display: none;
+    }
+    
+    .imageContainer {
+      margin-left: 0;
+      display: flex;
+    }
+  }

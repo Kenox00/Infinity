@@ -1,0 +1,71 @@
+.pos_landing_section {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3%;
+    background-color: #01A653;
+    min-height: 175px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.top_banner {
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #01A653;
+}
+
+.top_left {
+    max-width: 50%;
+}
+
+.top_left h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+    word-wrap: break-word;
+}
+
+.top_right {
+    display: flex;
+    gap: 30px;
+}
+
+.stat {
+    text-align: center;
+    margin: 20px;
+}
+
+.stat_number {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+}
+
+.stat_label {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+/* You might want to add media queries for responsiveness */
+@media (max-width: 768px) {
+    .top_banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top_left {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .top_right {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
